@@ -85,3 +85,86 @@ Notes related resources of the **Paths API**
             "license": "MIT",
             "keywords": ["shopping","money"]
         }
+
+# Group Places
+Notes related resources of the **Places API**
+
+## Places [/places/{id}]
+### Delete a Path [DELETE]
++ Response 204 (application/json)
+
+## Places Collection [/places]
+### List all Places [GET]
++ Response 200 (application/json)
+
+        [
+                {
+                    "id": 123123,
+                    "curator":"Jan Hein",
+                    "title": "Coding the Humanities",
+                    "description": "A path about web technologies",
+                    "version": "0.0.1",
+                    "license": "MIT",
+                    "keywords": ["web","tech"]
+                },
+                {
+                    "id": 123124,
+                    "curator":"Johanna",
+                    "title": "Augmenting Masterpieces",
+                    "description": "A path about web technologies",
+                    "version": "1.2.3",
+                    "license": "MIT",
+                    "keywords": ["museums","design thinking"]
+                },
+                {
+                    "id": 123126,
+                    "curator":"Marijn",
+                    "title": "Digging into Data",
+                    "description": "A path about web technologies",
+                    "version": "1.5.1",
+                    "license": "MIT",
+                    "keywords": ["data","search"]
+                },
+                {
+                    "id": 123144,
+                    "curator":"Charlotte",
+                    "title": "Content Strategy for Academics",
+                    "description": "A path about web technologies",
+                    "version": "2.2.9",
+                    "license": "MIT",
+                    "keywords": ["content","strategy"]
+                },
+                {
+                    "id": 123128,
+                    "curator":"Nigel",
+                    "title": "MBA for Dummies",
+                    "description": "A path about web technologies",
+                    "version": "0.2.0",
+                    "license": "MIT",
+                    "keywords": ["business","money"]
+                }
+        ]
+
+### Create a Place [POST]
++ Request (application/json)
+
+        {
+            "curator":"Reika",
+            "title": "Shopping without a Budget",
+            "description": "A path about web technologies",
+            "version": "1.2.3",
+            "license": "MIT",
+            "keywords": ["shopping","money"]
+        }
+
++ Response 201 (application/json)
+
+        {
+            "id": 122128,
+            "curator":"Reika",
+            "title": "Shopping without a Budget",
+            "description": "A path about web technologies",
+            "version": "1.2.3",
+            "license": "MIT",
+            "keywords": ["shopping","money"]
+        }
