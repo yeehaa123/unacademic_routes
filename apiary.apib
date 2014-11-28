@@ -7,6 +7,33 @@ UnAcademic API is a *academic content curation* service.
 Notes related resources of the **Paths API**
 
 ## Path [/paths/{id}]
+
+### Get a single Path [GET]
++ Response 200 (application/json)
+
+         {
+            "id":123123,
+            "curator":"Jan Hein",
+            "description": "A path about web technologies",
+            "version": "0.0.1",
+            "license": "MIT",
+            "keywords": ["web","tech"],
+            "forks": [123124,123126],
+            "forked_from": null
+            "places": [
+                {
+                    "id":123123,
+                    "name":"css tutorial",
+                    "image_url": "imagelocation.jpg"
+                },
+                {
+                    "id":123124,
+                    "name":"html tutorial",
+                    "image_url": "imagelocation.jpg"
+                }
+            ]
+        }
+
 ### Delete a Path [DELETE]
 + Response 204 (application/json)
 
