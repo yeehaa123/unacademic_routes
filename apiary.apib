@@ -110,7 +110,7 @@ Notes related resources of the **Paths API**
                     "forked_from": null,
                     "places": [1233, 7003, 110],
                     "learners": [3, 8, 10]
-            }
+            },
         ]
 
 ### Create a Path [POST]
@@ -149,52 +149,54 @@ Places related resources of the **Unacademic API**
 + Response 200 (application/json)
 
         [
-                {
-                    "id": 123123,
-                    "curator":"Jan Hein",
-                    "title": "Coding the Humanities",
-                    "description": "A path about web technologies",
-                    "version": "0.0.1",
-                    "license": "MIT",
-                    "keywords": ["web","tech"]
-                },
-                {
-                    "id": 123124,
-                    "curator":"Johanna",
-                    "title": "Augmenting Masterpieces",
-                    "description": "A path about web technologies",
-                    "version": "1.2.3",
-                    "license": "MIT",
-                    "keywords": ["museums","design thinking"]
-                },
-                {
-                    "id": 123126,
-                    "curator":"Marijn",
-                    "title": "Digging into Data",
-                    "description": "A path about web technologies",
-                    "version": "1.5.1",
-                    "license": "MIT",
-                    "keywords": ["data","search"]
-                },
-                {
-                    "id": 123144,
-                    "curator":"Charlotte",
-                    "title": "Content Strategy for Academics",
-                    "description": "A path about web technologies",
-                    "version": "2.2.9",
-                    "license": "MIT",
-                    "keywords": ["content","strategy"]
-                },
-                {
-                    "id": 123128,
-                    "curator":"Nigel",
-                    "title": "MBA for Dummies",
-                    "description": "A path about web technologies",
-                    "version": "0.2.0",
-                    "license": "MIT",
-                    "keywords": ["business","money"]
-                },
- 
+            { 
+                "id": 1,
+                "curator": 'yeehaa',
+                "curator_org": 'University of Amsterdam',
+                "contributors": '',
+                "title": 'HTML',
+                "version": "0.0.1",
+                "keywords": [ 'cth-markup' ],
+                "description": 'HTML stands for Hypertext Markup Language. When you look at a web page on a  web browser you see, at the simplest level, words. HTML instructs a web  browser what content to display. In many cases a page also displays images  or maybe video clips.  HTML defines and separates "content" (words, images, audio, video, and so  on) from "presentation" (how to display a specific type of content). HTML  uses a pre-defined set of elements to identify content types.\n',
+                "summary": 'HTML gives directions to the web browser on what content to display.  It uses a set of elements to identify content types.\n',
+                "objectives": [1, 2, 3, 4] 
+            },
+            { 
+                "id": 2,
+                "curator": 'yeehaa',
+                "curator_org": 'University of Amsterdam',
+                "contributors": '',
+                "title": 'CSS',
+                "version": "0.0.1",
+                "keywords": [ 'cth-design' ],
+                "description": 'This is the introduction to CSS (cascading style sheets). A CSS file allows  you to separate your website\'s markup content from its style. As always you  use your HTML file to arrange the content, but all of the presentation  (fonts, colors, background, borders, text formatting, link effects & so on…)  are accomplished within a CSS file.\n',
+                "summary": 'CSS allows you to separate your website\'s styling from its HTML content. \n',
+                "objectives": [6, 7] 
+            },
+            { 
+                "id": 3,
+                "curator": 'yeehaa',
+                "curator_org": 'University of Amsterdam',
+                "contributors": '',
+                "title": 'Gists',
+                "version": "0.0.1",
+                "keywords": [ 'cth-design' ],
+                "description": 'This is the introduction to CSS (cascading style sheets). A CSS file allows  you to separate your website\'s markup content from its style. As always you  use your HTML file to arrange the content, but all of the presentation  (fonts, colors, background, borders, text formatting, link effects & so on…)  are accomplished within a CSS file.\n',
+                "summary": 'CSS allows you to separate your website\'s styling from its HTML content. \n',
+                "objectives": [8, 9, 10] 
+            },
+            { 
+                "id": 4,
+                "curator": 'yeehaa',
+                "curator_org": 'University of Amsterdam',
+                "contributors": '',
+                "title": 'City Walk',
+                "version": "0.0.1",
+                "keywords": [ 'cth-design' ],
+                "description": 'You must be anxious to dive into the wonderful world of web programming. But the first thing we want you to do has sadly / luckily nothing to do with  code. The Citywalk will combine the knowledge you will get from the first  tutorials. Read on to find out how exactly you are going to do that.\n',
+                "summary": 'Get some last contact with the real world, before you disappear into its  virtual counterpart.\n',
+                "objectives": [11, 12, 13, 14] 
+            }
         ]
 
 ### Create a Place [POST]
