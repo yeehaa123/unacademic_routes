@@ -45,7 +45,8 @@ Notes related resources of the **Paths API**
 ### List all Paths [GET]
 + Response 200 (application/json)
 
-        [
+        { 
+           paths: [
             {
                 "id": 123123,
                 "curator":"Jan Hein",
@@ -110,8 +111,8 @@ Notes related resources of the **Paths API**
                 "forked_from": null,
                 "places": [1233, 7003, 110],
                 "learners": [3, 8, 10]
-            }
-        ]
+            }]
+        }
 
 ### Create a Path [POST]
 + Request (application/json)
