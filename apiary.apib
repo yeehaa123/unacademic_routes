@@ -5,16 +5,18 @@ UnAcademic API is a *academic content curation* service.
 
 # Group CoverInfo
 
+## CoverInfo [/coverInfo/{id}]
+
 + Parameters
-  + userId (required, number, `1`) ... String `id` of the CoverInfo to perform action with. Corresponds to a userId;
+  + id (required, number, `1`) ... String `id` of the CoverInfo to perform action with. Corresponds to a userId;
   
 
-### Get a single CoverInfo
+### Get a single CoverInfo [GET]
 
 + Response 200 (application/json)
 
          {
-            "userId": "yeehaa",
+            "id": "yeehaa",
             "title": "UnAcademic"
             "summary": "Learning by Dwelling",
             "description": "You must be anxious to dive into the wonderful world of web programming. But the first thing we want you to do has sadly / luckily nothing to do with  code. The Citywalk will combine the knowledge you will get from the first  tutorials. Read on to find out how exactly you are going to do that.\n",
