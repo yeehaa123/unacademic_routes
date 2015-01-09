@@ -218,15 +218,15 @@ Notes related resources of the **Paths API**
             "keywords": ["shopping","money"]
         }
 
-# Group Places
-Places related resources of the **Unacademic API**
+# Group Points
+Points related resources of the **Unacademic API**
 
-## Places [/places/{id}]
-### Delete a Path [DELETE]
+## Points [/points/{id}]
+### Delete a Point [DELETE]
 + Response 204 (application/json)
 
-## Places Collection [/places]
-### List all Places [GET]
+## Points Collection [/points]
+### List all Points [GET]
 + Response 200 (application/json)
 
         [
@@ -300,7 +300,7 @@ Places related resources of the **Unacademic API**
             }
         ]
 
-### Create a Place [POST]
+### Create a Point [POST]
 + Request (application/json)
 
         {
@@ -313,6 +313,24 @@ Places related resources of the **Unacademic API**
         }
 
 + Response 201 (application/json)
+
+        {
+            "id": 122128,
+            "curator":"Reika",
+            "title": "Shopping without a Budget",
+            "description": "A path about web technologies",
+            "version": "1.2.3",
+            "license": "MIT",
+            "keywords": ["shopping","money"]
+        }
+
+## Point [/points/{id}]
+
++ Parameters
+    + id (required, number, `1`) ... Numeric `id` of the Point to perform action with. Has example value.
+
+### Get a single Point [GET]
++ Response 200 (application/json)
 
         {
             "id": 122128,
